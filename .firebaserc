@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "hrsmoffshore",
+    "hrms": "hrsmoffshore",
+    "hrsmoff": "hrsmoffshore"
+  },
+  "targets": {},
+  "etags": {}
+}

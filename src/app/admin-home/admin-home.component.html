@@ -1,0 +1,50 @@
+
+<div class="spinner" [hidden]="spinner"></div>
+
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-6 col-sm-12 app">
+            <h3 class="text-bold">Total Applicant</h3>
+            <h5>{{Total_Applicant}}</h5>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <h5><button class="btn btn-primary" (click)="generateExcel()" [hidden]="generateDisabled">Generate Excel</button></h5>
+          <h5><button class="btn btn-secondary" [hidden]="generateDisabled1" ><a href="{{this.base_excel + this.excelFilename}}" id="excelDownload">Download Excel</a></button></h5>
+      </div>
+
+    </div>
+</div>
+
+
+
+<div class="container">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Current Position</th>
+          <th scope="col">Desired Position</th>
+          <th scope="col">Resume</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of Data; let index = index">
+          <td>{{index + 1}}</td>
+          <td>{{i.fname}}</td>
+          <td>{{i.lname}}</td>
+          <td>{{i.email}}</td>
+          <td>{{i.phone}}</td>
+          <td>{{i.currentPosition}}</td>
+          <td>{{i.desiredPosition}}</td>
+          <td> <button class="btn btn-primary Downloadbtn"><a href="{{this.base_url + i.resumeDoc}}" >Download Resume</a></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

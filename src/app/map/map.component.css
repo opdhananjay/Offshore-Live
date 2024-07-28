@@ -1,0 +1,92 @@
+/* .world-map{
+    background-color: #101224;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.world-map{
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+}
+
+.world-map img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.title{
+    text-align: center;
+    color: black;
+    margin: 2em 0;
+    padding: 0 1em;
+}
+
+
+.title p{
+    line-height: 50px;
+}
+
+.pin
+{
+    background: #4362f8;
+    position: absolute;
+    width: 0.7em;
+    height: 0.7em;
+    border: 1px solid #4362f8;
+    border-radius: 50%;
+}
+
+.pin::before{
+    content: '';
+    background:#4362f8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    animation: pulse 1.3s ease-in-out infinite;
+
+}
+
+.pin span{
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 3em;
+    padding: 0.3em 0.6em;
+    font-size: 0.9em;
+}
+
+
+.India{
+    top: 61%;
+    left: 67%;
+}
+ */
+
+
+
+/* Google map */
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+  }
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

@@ -1,0 +1,192 @@
+/* Custom styles for the header */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+}
+
+.logo{
+  width: 10vw;
+  mix-blend-mode: multiply;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; 
+}
+
+.navbar-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+.mailId{
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.nav-item:hover{
+  border: 1px solid black;
+  border-radius: 1vw;
+  background: black;
+  font-weight: bold;
+}
+
+.nav-item:hover .nav-link{
+  color: white;
+}
+
+.header-white {
+  background-color: #fff; /* Change background color to white */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+  z-index: 1000; /* Ensure header is on top of other elements */
+  animation: slideIn 1s linear;
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 991.98px) {
+  .header-white {
+    padding: 10px 0; /* Add padding for better spacing */
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  /* Adjust styles for smaller screens */
+  .navbar-brand {
+    font-size: 20px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    text-align: center;
+  }
+  .logo{
+      width: 23vw;
+    }
+  .mailId{
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+}
+
+
+/* logo responsivness */
+@media ((min-width:500px) and (max-width:990px)) {
+  .logo{
+    width: 11vh;
+  }
+}
+
+
+/* 
+*********************************************
+bootrtap drop down styling 
+
+*********************************
+
+*/
+
+
+/* Custom styles for dropdown menu */
+.custom-dropdown {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  animation: fadeInDown 0.5s;
+  padding: 1vw;
+}
+
+.custom-dropdown a.dropdown-item {
+  padding: .5vw;
+  margin: .5vw;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-dropdown a.dropdown-item:hover {
+  border-radius: 1vw;
+  color: black;
+}
+
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* 
+==============================================
+Hover on dropdown - overwrite bootstrap using css
+========================================
+
+*/
+
+/* Hide dropdown menu by default */
+.custom-dropdown {
+  display: none;
+}
+
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover .custom-dropdown {
+  display: block;
+}
+
+/* Custom styles for dropdown menu */
+.custom-dropdown {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  animation: fadeInDown 0.5s;
+}
+
+.custom-dropdown a.dropdown-item {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-dropdown a.dropdown-item:hover {
+  color: #007bff;
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.dropdown-item.active, .dropdown-item:active{
+  background-color: white;
+}

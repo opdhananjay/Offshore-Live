@@ -1,0 +1,89 @@
+.container {
+    padding: 0 50px;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .service-description {
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Initial state of service descriptions */
+.service-description {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: orange;
+    margin: .5vw;
+}
+
+/* Fade in and slide up animation on hover */
+.service-description:hover {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: orange;
+    border-radius:10px;
+}
+
+
+.container {
+    animation: slideInFromLeft 1s ease forwards;
+    opacity: 0; /* Start with opacity 0 to hide the content initially */
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /* Define the animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .service-description:hover {
+    background-color: blueviolet;
+  }
+  
+
+  /*  */
+  .service-description {
+    opacity: 0;
+  }
+  
+  .slide-in-left {
+    animation: slideInFromLeft 1s ease forwards;
+    opacity: 1;
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+
+ 

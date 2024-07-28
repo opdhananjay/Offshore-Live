@@ -1,0 +1,153 @@
+.orange-text {
+    color: orange;
+}
+
+.black-text {
+    color: black;
+}
+
+.blue-text {
+    color: blueviolet;
+}
+
+.img-fluid {
+    border-radius: 10px 10px 0px 10px;
+}
+
+.row {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.content {
+
+    padding: 10px;
+    opacity: 0;
+    /* Initially hide the content */
+    transform: translateX(100%);
+    /* Slide in from the left */
+    transition: opacity 1s, transform 1s;
+}
+
+.content.show {
+    opacity: 1;
+    /* Show the content */
+    transform: translateX(0%);
+    /* Slide in to the original position */
+    transform: scale(1.1);
+    /* Increase scale on hover */
+}
+
+.content2 {
+    padding: 10px;
+    opacity: 0;
+    /* Initially hide the content */
+    transform: translateY(100%);
+    /* Slide in from the left */
+    transition: opacity 1s, transform 1s;
+}
+
+.content2.show {
+    opacity: 1;
+    /* Show the content */
+    transform: translateY(0%);
+    /* Slide in to the original position */
+    transform: scale(1.1);
+    /* Increase scale on hover */
+}
+
+
+
+/*  */
+
+
+/** about section **/
+
+.about {
+    background: #fff;
+    box-shadow: inset 0px 1px 87px -60px #6D6D6D;
+    padding: 90px 0;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+
+.about:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+
+.about .titlepage {
+    text-align: right;
+    padding: 0;
+    max-width: 541px;
+    width: 100%;
+    float: left;
+}
+
+.about .titlepage h2 {
+    margin-bottom: 20px;
+}
+
+.about .titlepage p {
+    color: #030303;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.about .titlepage .read_more:hover {
+    color: #fff;
+}
+
+.about_img {
+    max-width: 600px;
+    width: 100%;
+    float: right;
+}
+
+.about_img figure {
+    margin: 0;
+}
+
+.about_img figure img {
+    width: 100%;
+}
+
+.read_more {
+    font-size: 17px;
+    background-color: #090807;
+    color: #fff !important;
+    padding: 13px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.read_more:hover {
+    background: #0808ff;
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
+/** end about section **/
+
+
+
+
+/* every row smooth transition scale  */
+.smooth {
+    box-shadow: inset 0px 1px 40px -40px #6D6D6D;
+    transition: transform 0.4s ease; /* Smooth transition effect */
+}
+
+.smooth:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* every row smooth transition scale end */

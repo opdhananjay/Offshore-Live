@@ -1,0 +1,146 @@
+
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #120f2d80;
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+
+
+/*
+---------------------------------------------
+About Us
+---------------------------------------------
+*/
+
+.about-us {
+    padding-top: 1vh;
+    position: relative;
+  }
+  
+  .about-us .section-heading {
+    margin-bottom: 45px;
+  }
+  
+  .about-us .section-heading,
+  .about-us .box-item,
+  .about-us p,
+  .about-us .box-item .gradient-button,
+  .about-us .box-item span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-us .box-item {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .about-us .box-item h4 a {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 8px;
+    color: #2a2a2a;
+    transition: all .3s;
+  }
+    
+  .about-us .box-item p {
+    margin-bottom: 0px;
+  }
+  
+  .about-us .box-item:hover h4 a {
+    color: #4b8ef1;
+  }
+  
+  .about-us .gradient-button {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us span {
+    font-size: 14px;
+    color: #7a7a7a;
+  }
+  
+  .about-us .right-image {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-us:after {
+    /* background-image: url(../images/about-bg.jpg); */
+    width: 777px;
+    height: 1132px;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  
+
+  .text-anchor{
+    text-decoration: none;
+
+  }
+
+
+  @media (max-width:800px) {
+    .about-us {
+        padding-top: 1vh;
+      }
+    
+  }
+
+  @media (max-width:600px) {
+    .about-us{
+      margin-top: -10vh;
+    }
+  }
+
+  @media (max-width:420px) {
+    .resume{
+        margin-top: .5vh;
+      }
+  }
+
+
+  /* travel and logistics */
+
+  .imgCol img{
+    border-radius:.5vw;
+  }

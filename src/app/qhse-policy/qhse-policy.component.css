@@ -1,0 +1,44 @@
+.about_section {
+  font-family: "Poppins", sans-serif;
+}
+
+.about_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_section a {
+  display: inline-block;
+  padding: 8px 25px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 25px;
+  margin-top: 45px;
+}
+
+.about_section a:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.about_section p {
+  margin-top: 45px;
+}
+
+.about_section .img-box img {
+  width: 100%;
+}
+
+.about_section h6 {
+  text-transform: uppercase;
+  color: #bdbbbb;
+  font-weight: bold;
+  margin: 0;
+}
+
+.service_section {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,66 @@
+
+  /*---------------------------------------
+    SECTION               
+  -----------------------------------------*/
+  section {
+    content-visibility: auto;
+    contain-intrinsic-size: 700px;
+  }
+  
+  .section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  
+  .featured {
+    background: var(--section-bg-color);
+  }
+  
+  /*---------------------------------------
+    ABOUT               
+  -----------------------------------------*/
+  .about .nav-pills .nav-item {
+    width: 100%;
+  }
+  
+  .about .nav-pills .nav-link {
+    color: var(--grey-color);
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    border-left: 1px solid var(--grey-color);
+    border-radius: 0;
+    padding-right: 0;
+  }
+  
+  .about .nav-pills .nav-link:hover,
+  .about .nav-pills .nav-link.active, 
+  .about .nav-pills .show>.nav-link {
+    background: transparent;
+    border-left-color: var(--primary-color);
+    color: var(--primary-color);
+  }
+
+.nav-item.active ,.nav-link.active{
+    color: white;
+    border: 0px solid black;
+    background: black;
+    border-radius: 1vw;
+
+}
+
+.img-fluid{
+    border-radius: 1vw;
+}
+
+
+.LearnMore{
+    background: blueviolet;
+    border-radius: 1vw;
+    padding:1vw;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+  

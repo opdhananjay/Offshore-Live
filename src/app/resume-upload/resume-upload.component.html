@@ -1,0 +1,76 @@
+<h2 class="text-center m-5">Submit Your Resume</h2>
+<div class="container d-flex flex-column flex-md-row">
+    <div class="col-md-6">
+      <form class="mb-5 form-container" (ngSubmit)="submitNow($event)" id="contactForm" name="contactForm" [formGroup]="resumeUpload">
+        <input type="hidden" name="access_key" value="1d25b0df-66fc-4599-bee6-978636237e6a">
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control " name="fName" id="fName" placeholder="Your first name" formControlName="fName" required>
+            <div *ngIf="resumeUpload.get('fName')?.errors && resumeUpload.get('fName')?.touched">
+              <small *ngIf="resumeUpload.get('fName')?.errors?.['required']" class="text-danger">First Name is required</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="lName" id="lName" placeholder="Your last name" formControlName="lName" required>
+            <div *ngIf="resumeUpload.get('lName')?.errors && resumeUpload.get('lName')?.touched">
+              <small *ngIf="resumeUpload.get('lName')?.errors?.['required']" class="text-danger">Last Name is required</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="Email" id="Email" placeholder="Email" formControlName="Email" required>
+            <div *ngIf="resumeUpload.get('Email')?.errors && resumeUpload.get('Email')?.touched">
+              <small *ngIf="resumeUpload.get('Email')?.errors?.['required']" class="text-danger">Email is required</small>
+              <small *ngIf="resumeUpload.get('Email')?.errors?.['pattern']" class="text-danger">Your email is invalid</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="Phone" id="Phone" placeholder="Phone" formControlName="Phone" required>
+            <div *ngIf="resumeUpload.get('Phone')?.errors && resumeUpload.get('Phone')?.touched">
+              <small *ngIf="resumeUpload.get('Phone')?.errors?.['required']" class="text-danger">Phone is required</small>
+              <small *ngIf="resumeUpload.get('Phone')?.errors?.['pattern']" class="text-danger">Invalid phone number</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="currentPosition" id="currentPosition" placeholder="Current Position" formControlName="currentPosition">
+            <div *ngIf="resumeUpload.get('currentPosition')?.errors && resumeUpload.get('currentPosition')?.touched">
+              <small *ngIf="resumeUpload.get('currentPosition')?.errors?.['maxlength']" class="text-danger">Max 30 characters allowed</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="desirePosition" id="desirePosition" placeholder="Desired Position" formControlName="desirePosition">
+            <div *ngIf="resumeUpload.get('desirePosition')?.errors && resumeUpload.get('desirePosition')?.touched">
+              <small *ngIf="resumeUpload.get('desirePosition')?.errors?.['maxlength']" class="text-danger">Max 30 characters allowed</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <input type="file" class="form-control" name="resumeFile" id="resumeFile" formControlName="resumeFile" (change)="onFileSelected($event)" required>
+            <div *ngIf="resumeUpload.get('resumeFile')?.errors && resumeUpload.get('resumeFile')?.touched">
+              <small *ngIf="resumeUpload.get('resumeFile')?.errors?.['required']" class="text-danger">Resume file is required</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button type="submit" [disabled]="resumeUpload.invalid" class="btn btn-primary rounded-0 py-2 px-4 ms-2 mt-3">Submit</button>
+            <span class="submitting"></span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="../../assets/job/HRMSoffshore.webp" class="img-fluid" alt="job find">
+    </div>
+  </div>
+  

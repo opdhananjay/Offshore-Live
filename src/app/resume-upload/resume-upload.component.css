@@ -1,0 +1,24 @@
+.form-container {
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.form-control{
+    margin: .8vw;
+    width: 40vw;
+}
+
+@media (max-width:800px) {
+    .form-control{
+        width: 90vw;
+    }
+}
